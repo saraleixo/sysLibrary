@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+
+    <a href="emprestimo.html">
+        <button>Novo Empréstimo</button>
+    </a>
+
+    <form id="bookForm">
+        <input type="text" id="title" placeholder="Título" required />
+        <input type="text" id="autor" placeholder="Autor" required />
+        <select id="category" required>
+            <option value="" disabled selected>Selecione uma categoria</option>
+            <option value="institutional">Institucional</option>
+            <option value="teology">Teologia</option>
+            <option value="christianLife">Vida Cristã</option>
+            <option value="devocional">Devocional</option>
+            <option value="marriage">Casamento</option>
+            <option value="youngers">Jovens</option>
+            <option value="children">Crianças</option>
+            <option value="fiction">Ficção</option>
+        </select>
+        <button type="submit">Cadastrar Livro</button>
+    </form>
+
+    <form id="readerForm">
+        <input type="text" id="name" placeholder="Nome" required />
+        <input type="text" id="lastName" placeholder="Sobrenome" required />
+        <input type="tel" id="phoneNumber" pattern="[0-9]{11}" placeholder="Telefone" required />
+        <button type="submit">Cadastrar Leitor</button>
+    </form>
+
+    <div id="readersList"></div>
+
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
