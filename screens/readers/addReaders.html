@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Avivamento – Cadastrar Leitor</title>
+</head>
+
+<body>
+    <form id="readerForm">
+        <input type="text" id="name" placeholder="Nome" required />
+        <input type="text" id="lastName" placeholder="Sobrenome" required />
+        <input type="tel" id="phoneNumber" pattern="[0-9]{11}" placeholder="Telefone" required />
+        <input type="email" id="email" placeholder="exemplo@email.com" required />
+        <input type="text" id="date" pattern="\d{2}/\d{2}/\d{4}" placeholder="Data de Nascimento" required />
+        <button type="submit">Cadastrar Leitor</button>
+    </form>
+
+    <script type="module" src="./addReader.js"></script>
+</body>
+
+</html>
