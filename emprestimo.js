@@ -9,12 +9,24 @@ document.addEventListener("DOMContentLoaded", () => {
     const booksContainer = document.getElementById("booksList");
     if (!booksContainer) return;
     const booksRef = collection(db, "books");
+
     onSnapshot(booksRef, (snapshot) => {
         booksContainer.innerHTML = "";
         snapshot.forEach((doc) => {
             const book = doc.data();
+            const bookId = doc.id;
+            const bookTitle = book.title;
+
+            const isBorrowed = book.status === "borrowed";
+
             booksContainer.innerHTML += `
-        <p>${book.title} - ${book.autor}</p>`;
+        <p>${book.title} <i>(${book.autor})</i></p>
+        <a href="emprestimoLeitor.html?bookId=${bookId}&bookTitle=${bookTitle}">
+            <button ${isBorrowed ? "disabled" : ""}>
+                ${isBorrowed ? "Emprestado" : "Selecionar"}
+            </button>
+        </a>
+    `;
         });
     });
 
