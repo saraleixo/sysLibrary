@@ -27,6 +27,8 @@ form.addEventListener("submit", async (event) => {
         alert("Leitor cadastrado com sucesso!");
         form.reset();
 
+        window.location.href = "./readers.html"
+
     } catch (error) {
         console.error(error);
         alert("Erro ao cadastrar leitor.");
