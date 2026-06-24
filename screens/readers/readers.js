@@ -34,7 +34,7 @@ searchInput.addEventListener("input", (event) => {
 
 function handleSearch(wordSearched) {
     const arrayFiltered = readers.filter((reader) =>
-        removeAccents(reader.title).includes(
+        removeAccents(reader.name).includes(
             removeAccents(wordSearched)
         )
     );
@@ -54,7 +54,6 @@ function renderReaders(lista) {
     readersContainer.innerHTML = "";
 
     lista.forEach((reader) => {
-        const isBorrowed = reader.status === "borrowed";
 
         readersContainer.innerHTML += `
             <p>${reader.name} ${reader.lastName}</p>
