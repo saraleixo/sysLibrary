@@ -9,3 +9,9 @@ import {
 const bookForm = document.getElementById("bookForm");
 const readerForm = document.getElementById("readerForm");
 const booksList = document.getElementById("booksList");
+
+const params = new URLSearchParams(window.location.search);
+
+if (params.get("success") === "loan") {
+    alert("Empréstimo realizado com sucesso!");
+}
