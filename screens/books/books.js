@@ -1,5 +1,6 @@
 import { db } from "../../services/firebase.js";
 import {
+    doc,
     collection,
     onSnapshot
 } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
@@ -57,9 +58,11 @@ function renderBooks(lista) {
         const isBorrowed = book.status === "borrowed";
 
         booksList.innerHTML += `
-            <p>${book.title} <i>(${book.autor})</i></p>
+            <p class="bookInfo" data-id="${book.id}">
+                ${book.title} <i>(${book.autor})</i>
+            </p>
 
-            <a href="emprestimoLeitor.html?bookId=${book.id}&bookTitle=${encodeURIComponent(book.title)}">
+            <a href="../loans/addLoans.html?bookId=${book.id}&bookTitle=${encodeURIComponent(book.title)}">
                 <button ${isBorrowed ? "disabled" : ""}>
                     Selecionar
                 </button>
@@ -70,4 +73,19 @@ function renderBooks(lista) {
             <hr>
         `;
     });
+
+    document.querySelectorAll(".bookInfo").forEach((p) => {
+        p.addEventListener("click", () => {
+            const bookId = p.dataset.id;
+            openInfos(bookId);
+        });
+    });
+}
+
+function openInfos(bookId) {
+    const bookRef = doc(db, "books", bookId);
+    const book = books.find(book => book.id === bookId);
+
+    window.location.href =
+        `bookInfo.html?bookId=${bookId}&bookTitle=${encodeURIComponent(book.title)}`;
 }
