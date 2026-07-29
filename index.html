@@ -6,29 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biblioteca Avivamento</title>
     <link rel="icon" href="/assets/sigla 1_alta.png">
-
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    <a href="addLoans.html">
-        <button>+</button>
-    </a>
 
-    <a href="screens/books/books.html">
-        <button>Livros</button>
-    </a>
+    <div class="top">
+        <a href="screens/loans/addLoans.html">
+            <button class=addLoans>+</button>
+        </a>
 
-    <a href="screens/readers/readers.html">
-        <button>Leitores</button>
-    </a>
+        <img src="assets/Educação Cristã [Logo].png">
+    </div>
 
-    <a href="screens/loans/loans.html">
-        <button>Empréstimos e Devoluções</button>
-    </a>
+    <div class="libraryTitle">
+        <h1>Biblioteca <i>Emília Santos</i></h1>
+        <h2>IEAB Cascavel</h2>
+    </div>
 
-    <a href="aboutUs.html">
-        <button>Sobre Nós</button>
-    </a>
+    <div class="firstButtonsLine">
+        <a class="catalog" href="screens/books/books.html">
+            <img src="assets/catalog.png">
+            <button>Catálogo</button>
+        </a>
+
+        <a class="readers" href="screens/readers/readers.html">
+            <img src="assets/readers.png">
+            <button>Leitores</button>
+        </a>
+    </div>
+
+    <div class="secondButtonsLine">
+        <a class="loans" href="screens/loans/loans.html">
+            <img src="assets/loans.png">
+            <button>Empréstimos</button>
+        </a>
+
+        <a class="ourHistory" href="aboutUs.html">
+            <img src="assets/ourHistory.png">
+            <button>Nossa História</button>
+        </a>
+    </div>
 
     <script type="module" src="main.js"></script>
 </body>
