@@ -31,11 +31,14 @@ bookForm.addEventListener("submit", async (e) => {
             lenderId: null,
             pageNumber: pageNumber,
             year: year,
-            synopsis: synopsis
+            synopsis: synopsis,
+            dataStatus: " ",
         });
 
         alert("Livro cadastrado com sucesso!");
         bookForm.reset();
+
+        window.location.href = "./books.html"
     } catch (error) {
         console.error("Erro ao cadastrar:", error);
     }
