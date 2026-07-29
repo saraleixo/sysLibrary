@@ -1,0 +1,168 @@
+@font-face {
+    font-family: "Behind The Nineties Regular";
+    src: url("./fonts/Behind-The-Nineties-Rg.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Behind The Nineties Medium Italic";
+    src: url("./fonts/Behind-The-Nineties-Md-It.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Inter Regular";
+    src: url("./fonts/Inter_18pt-Regular.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: "Inter Extralight";
+    src: url("./fonts/Inter_18pt-ExtraLight.ttf") format("opentype");
+}
+
+body {
+    background-color: #f1f1f1;
+    font-family: "Inter", sans-serif;
+}
+
+a .addLoans {
+    width: 45px;
+    height: 45px;
+    fill: #ccd9d5;
+    background-color: #CCD9D5;
+    border-radius: 100%;
+    border: 0;
+    color: #282828;
+    font-family: "Inter Extralight";
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 17px;
+    letter-spacing: -0.7px;
+}
+
+img {
+    width: 54px;
+    height: 45px;
+    aspect-ratio: 6/5;
+}
+
+.top {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+h1 {
+    font-family: "Behind The Nineties Regular";
+    width: 330px;
+    font-weight: normal;
+    margin-top: 42px;
+    margin-bottom: 0px;
+}
+
+h1 i {
+    font-family: "Behind The Nineties Medium Italic";
+    font-weight: normal;
+}
+
+h2 {
+    font-family: "Inter ExtraLight";
+    font-weight: normal;
+    margin-top: -5px;
+}
+
+.libraryTitle {
+    margin-left: 15px;
+}
+
+.firstButtonsLine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.catalog,
+.readers {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.catalog img,
+.readers img {
+    width: 43vw;
+    height: 43vw;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center bottom;
+}
+
+.catalog button,
+.readers button {
+    position: absolute;
+    bottom: 0;
+    color: #F1F1F1;
+    background-color: #809FA6;
+    width: 43vw;
+    height: 46px;
+    font-size: 17px;
+    font-family: "Inter Regular";
+    text-align: left;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: -0.34px;
+    border-radius: 0 0 10px 10px;
+    border: none;
+    padding-left: 15px;
+}
+
+/*OLHA A ÚLTIMA CONVERSA DO CHAT PARA CONTINUAR DA ONDE VOCÊ PAROU*/
+
+.secondButtonsLine {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.loans,
+.ourHistory {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.loans img,
+.ourHistory img {
+    width: 43vw;
+    height: 60vw;
+    border-radius: 10px;
+}
+
+.loans button,
+.ourHistory button {
+    position: absolute;
+    bottom: 0;
+    color: #F1F1F1;
+    background-color: #809FA6;
+    width: 43vw;
+    height: 46px;
+    font-size: 17px;
+    font-family: "Inter Regular";
+    text-align: left;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: -0.34px;
+    border-radius: 0 0 10px 10px;
+    border: none;
+    padding-left: 15px;
+}
