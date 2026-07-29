@@ -57,8 +57,9 @@ h1 {
     font-family: "Behind The Nineties Regular";
     width: 330px;
     font-weight: normal;
-    margin-top: 42px;
+    margin-top: 50px;
     margin-bottom: 0px;
+    font-size: 27px;
 }
 
 h1 i {
@@ -69,6 +70,7 @@ h1 i {
 h2 {
     font-family: "Inter ExtraLight";
     font-weight: normal;
+    font-size: 17px;
     margin-top: -5px;
 }
 
@@ -97,8 +99,6 @@ h2 {
     width: 43vw;
     height: 43vw;
     border-radius: 10px;
-    object-fit: cover;
-    object-position: center bottom;
 }
 
 .catalog button,
@@ -121,8 +121,6 @@ h2 {
     padding-left: 15px;
 }
 
-/*OLHA A ÚLTIMA CONVERSA DO CHAT PARA CONTINUAR DA ONDE VOCÊ PAROU*/
-
 .secondButtonsLine {
     margin-top: 5px;
     display: flex;
@@ -143,7 +141,7 @@ h2 {
 .loans img,
 .ourHistory img {
     width: 43vw;
-    height: 60vw;
+    height: 65vw;
     border-radius: 10px;
 }
 
